@@ -2,9 +2,9 @@ package com.scnu.manager;
 
 public enum GameElement {
 	/**
-	 * PLAY  Íæ¼Ò
-	 * MAPS  µØÍ¼
-	 * ENEMY µÐÈË
+	 * PLAY  ï¿½ï¿½ï¿½
+	 * MAPS  ï¿½ï¿½Í¼
+	 * ENEMY ï¿½ï¿½ï¿½ï¿½
 	 */
-	PLAY,MAPS,ENEMY,BOSS
+	MAPS,PLAY,ENEMY,BOSS
 }

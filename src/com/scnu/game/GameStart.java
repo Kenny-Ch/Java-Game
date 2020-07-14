@@ -14,6 +14,9 @@ public class GameStart {
 		
 		gj.setJPanel(jp);
 		gj.start();
+		
+		Enum en=null;
+				
 
 	}
 

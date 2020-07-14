@@ -67,10 +67,13 @@ public class ElementManager {
 //	}
 	public void init() { //实例化在这里完成
 		gameElements=new HashMap<GameElement,List<ElementObj>>();
-		gameElements.put(GameElement.PLAY,new ArrayList<ElementObj>());
-		gameElements.put(GameElement.MAPS,new ArrayList<ElementObj>());
-		gameElements.put(GameElement.ENEMY,new ArrayList<ElementObj>());
-		gameElements.put(GameElement.BOSS,new ArrayList<ElementObj>());
+//		gameElements.put(GameElement.PLAY,new ArrayList<ElementObj>());
+//		gameElements.put(GameElement.MAPS,new ArrayList<ElementObj>());
+//		gameElements.put(GameElement.ENEMY,new ArrayList<ElementObj>());
+//		gameElements.put(GameElement.BOSS,new ArrayList<ElementObj>());
+		for(GameElement ge:GameElement.values()) {
+			gameElements.put(ge,new ArrayList<ElementObj>());
+		}
 	}
 
 }
