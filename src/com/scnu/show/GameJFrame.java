@@ -54,6 +54,10 @@ public class GameJFrame extends JFrame{
 			thread.start();
 		}
 		this.setVisible(true);//显示界面
+		if(this.jPanel instanceof Runnable) {
+//			已经做了类型判断，强制类型转换不出错
+			new Thread((Runnable)this.jPanel).start();
+		}
 
 	}
 	

@@ -1,5 +1,6 @@
 package com.scnu.game;
 
+import com.scnu.controller.GameListener;
 import com.scnu.show.GameJFrame;
 import com.scnu.show.GameMainJPanel;
 
@@ -11,11 +12,13 @@ public class GameStart {
 		GameJFrame gj=new GameJFrame();
 		//第一件事情，实例化面板，注入到jframe中
 		GameMainJPanel jp=new GameMainJPanel();
+		//实例化监听
+		GameListener listener=new GameListener();
 		
 		gj.setJPanel(jp);
-		gj.start();
+		gj.setKeyListener(listener);
 		
-		Enum en=null;
+		gj.start();
 				
 
 	}

@@ -18,4 +18,16 @@ public class Play extends ElementObj{
 				this.getX(), this.getY(), 
 				this.getW(), this.getH(), null);
 	}
+	
+	public void keyClick(boolean bl,int key) {
+		if(bl) {
+			switch(key) {
+			case 37:this.setX(this.getX()-10);break;
+			case 38:this.setY(this.getY()-10);break;
+			case 39:this.setX(this.getX()+10);break;
+			case 40:this.setY(this.getY()+10);break;
+			}
+		}
+		
+	}
 }
