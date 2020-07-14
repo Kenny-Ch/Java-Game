@@ -55,6 +55,12 @@ public abstract class ElementObj {
 	public void keyClick(boolean bl,int key) {//不是强制必须实现的。
 		
 	}
+	/**
+	 * @说明 移动方法；需要移动的子类请实现这个方法
+	 */
+	public void move() {
+		
+	}
 	
 	/**
 	 * z只要是VO类POJO 就要为属性生成get和set方法

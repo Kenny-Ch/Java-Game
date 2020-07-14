@@ -32,15 +32,8 @@ public class GameMainJPanel extends JPanel implements Runnable{
 	
 	public GameMainJPanel() {
 		init();
-		//以下代码为临时测试代码
-		load();
 	}
-	public void load() {//该方法为临时方法
-		ImageIcon icon =new ImageIcon("image/player1_up.png");
-		ElementObj obj =new Play(100,100,50,50,icon);//实例化对象
-//		em.getElementsByKey(GameElement.PLAY).add(obj);//将对象放入到我们的元素管理器中
-		em.addElement(obj, GameElement.PLAY);//直接添加进去
-	}
+
 	public void init() {
 		em=ElementManager.getManager();
 	}
