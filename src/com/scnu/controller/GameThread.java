@@ -61,7 +61,7 @@ public class GameThread extends Thread{
 				List<ElementObj> list = all.get(ge);
 				for(int i=0;i<list.size();i++) {
 					ElementObj obj=list.get(i);
-					obj.move();
+					obj.model();
 				}
 			}
 			try {

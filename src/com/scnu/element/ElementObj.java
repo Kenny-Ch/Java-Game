@@ -58,9 +58,30 @@ public abstract class ElementObj {
 	/**
 	 * @说明 移动方法；需要移动的子类请实现这个方法
 	 */
-	public void move() {
+	protected void move() {
 		
 	}
+	/**
+	 * @设计模式	模板模式：在模板模式中定义对象执行方法的先后顺序，由子类选择性重写方法
+	 * 			1、移动行为 2、换装行为 3、子弹发射
+	 */
+	public final void model() {
+//		先换装
+		updateImage();
+//		再移动
+		move();
+//		再发射子弹
+		add();
+	}
+	protected void updateImage() {
+		
+	}
+	protected void add() {
+		
+	}
+	
+	
+	
 	
 	/**
 	 * z只要是VO类POJO 就要为属性生成get和set方法
